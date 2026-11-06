@@ -130,6 +130,8 @@ python scripts/visualize.py --project data/video_001 --pose
 python scripts/visualize.py --project data/video_001 --robot
 ```
 
+Para obtener los binarios para el G1-23 DoF se obteiene junto al de 29 DoF, el archivo es robot_motion_twist.pkl. 
+
 ## Web UI
 
 ```bash

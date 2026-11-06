@@ -173,7 +173,7 @@ class ViserManager:
             session.monitor_task = asyncio.create_task(self._monitor_session(session))
 
         # Wait for viser server to bind to port
-        await self._wait_for_port(port, timeout=10.0)
+        await self._wait_for_port(port, timeout=60.0)
 
         return session
 
