@@ -35,8 +35,8 @@ app.include_router(viser.router, prefix="/api/viser", tags=["viser"])
 @app.get("/", response_class=HTMLResponse)
 async def index(request: Request):
     """Main page."""
-    return templates.TemplateResponse("index.html", {"request": request})
-
+    #return templates.TemplateResponse("index.html", {"request": request})
+    return templates.TemplateResponse(request, "index.html", {"request": request})
 
 @app.get("/health")
 async def health():
